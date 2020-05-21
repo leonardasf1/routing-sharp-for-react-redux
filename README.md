@@ -1,4 +1,4 @@
-# routing-sharp-for-reactJS
+# routing-sharp-for-react-redux
 
 in App.js:
 <pre><code>
