@@ -14,14 +14,14 @@ function App() {
   )
   
   return (
-    &lt;div className="App"&gt;
+    <div className="App">
   
         {
         route === '#profile' &&
-        &lt;Profile /&gt;
+        <Profile />
         }
         
-    &lt;/div&gt;
+    </div>
   );
 }
 
@@ -31,5 +31,5 @@ export default App;
 in .html:
 
 ```html
-&lt;a href="#profile"&gt;Profile&lt;/a&gt;
+<a href="#profile">Profile</a>
 ```
