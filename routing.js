@@ -1,10 +1,18 @@
-export function routing(setPathState) {
-    window.addEventListener("DOMContentLoaded", function() {
-        if (window.location.hash) setPath();
-    })
-    window.addEventListener('hashchange', setPath);
+import { ROUTE_PATH } from "../redux/types";
 
-    function setPath() {
-        setPathState(pathState => pathState = window.location.hash)
+export function routing() {
+    return dispatch => {
+        if (window.location.hash) dispatch(setPath());
+
+        window.addEventListener(
+            'hashchange', () => { dispatch(setPath()) }
+        );
+    }
+}
+
+function setPath() {
+    return {
+        type: ROUTE_PATH,
+        payload: window.location.hash
     }
 }
