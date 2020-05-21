@@ -6,14 +6,17 @@ import {routing} from './modules/routing'
 
 function App() {
 
-  const [pathState, setPathState] = useState('')
-  routing(setPathState)
+  useEffect(() => { dispatch(routing()) },[])
 
+  const route = useSelector(
+    state => state.app.route
+  )
+  
   return (
     &lt;div className="App"&gt;
   
         {
-        pathState === '#profile' &&
+        route === '#profile' &&
         &lt;Profile /&gt;
         }
         
