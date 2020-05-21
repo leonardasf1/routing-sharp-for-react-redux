@@ -1,7 +1,8 @@
 # routing-sharp-for-react-redux
 
 in App.js:
-<pre><code>
+
+```jsx
 import {routing} from './modules/routing'
 
 function App() {
@@ -25,10 +26,10 @@ function App() {
 }
 
 export default App;
-</code></pre>
+```
 
 in .html:
 
-<pre><code>
+```html
 &lt;a href="#profile"&gt;Profile&lt;/a&gt;
-</pre></code>
+```
