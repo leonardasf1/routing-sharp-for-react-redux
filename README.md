@@ -1,6 +1,6 @@
 # routing-sharp-for-react-redux
 
-lightest routing on window.location.hash 
+routing on window.location.hash 
 
 in App.js:
 
